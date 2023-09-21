@@ -17,4 +17,9 @@ class Perbaikan extends Model
     protected $fillable = [
         'nomor', 'tanggal'
     ];
+
+    public function armada()
+    {
+    	return $this->belongsToMany(Armada::class);
+    }
 }
