@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('armadas', function (Blueprint $table) {
             $table->id();
+            $table->string('merek');
+            $table->string('nopol');
             $table->timestamps();
         });
     }
